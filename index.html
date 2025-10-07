@@ -26,58 +26,68 @@
             <figcaption class="text-brown-950 text-xl font-bold">Spending - Last 7 days</figcaption>
             <div class="flex h-28 w-full flex-row items-end gap-6">
               <div
-                class="histogram-element hocus:opacity-50! relative"
+                class="histogram-element hocus:bg-red-500/70 group relative"
                 id="mon"
                 aria-label="Monday"
               >
+                <p
+                  aria-label="Spending in this day"
+                  class="tooltip group-hocus:animate-wiggle opacity-100!"
+                ></p>
                 <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">mon</p>
               </div>
 
               <div
-                class="histogram-element hocus:opacity-50! relative"
+                class="histogram-element hocus:bg-red-500/70 group relative"
                 id="tue"
                 aria-label="Tuesday"
               >
+                <p aria-label="Spending in this day" class="tooltip group-hocus:animate-wiggle"></p>
                 <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">tue</p>
               </div>
 
               <div
-                class="histogram-element hocus:opacity-50! histogram-element-curret-day relative"
+                class="histogram-element hocus:bg-blue-300/70 histogram-element-curret-day group relative"
                 id="wed"
                 aria-label="Wednesday "
               >
+                <p aria-label="Spending in this day" class="tooltip group-hocus:animate-wiggle"></p>
                 <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">wed</p>
               </div>
 
               <div
-                class="histogram-element hocus:opacity-50! relative"
+                class="histogram-element hocus:bg-red-500/70 group relative"
                 id="thu"
                 aria-label="Thursday"
               >
+                <p aria-label="Spending in this day" class="tooltip group-hocus:animate-wiggle"></p>
                 <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">thu</p>
               </div>
 
               <div
-                class="histogram-element hocus:opacity-50! relative"
+                class="histogram-element hocus:bg-red-500/70 group relative"
                 id="fri"
                 aria-label="Friday"
               >
+                <p aria-label="Spending in this day" class="tooltip group-hocus:animate-wiggle"></p>
                 <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">fri</p>
               </div>
 
               <div
-                class="histogram-element hocus:opacity-50! relative"
+                class="histogram-element hocus:bg-red-500/70 group relative"
                 id="sat"
                 aria-label="Saturday"
               >
+                <p aria-label="Spending in this day" class="tooltip group-hocus:animate-wiggle"></p>
                 <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">sat</p>
               </div>
 
               <div
-                class="histogram-element hocus:opacity-50! relative"
+                class="histogram-element hocus:bg-red-500/70 group relative"
                 id="sun"
                 aria-label="Sunday"
               >
+                <p aria-label="Spending in this day" class="tooltip group-hocus:animate-wiggle"></p>
                 <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">sun</p>
               </div>
             </div>
@@ -85,9 +95,12 @@
         </section>
 
         <section class="flex flex-col items-start gap-4">
-          <h2 class="text-sm">Total this month</h2>
           <div class="flex w-full flex-row justify-between">
-            <strong class="text-brown-950 text-3xl">$478.33</strong>
+            <div>
+              <h2 class="text-sm">Total this month</h2>
+              <strong class="text-brown-950 text-3xl">$478.33</strong>
+            </div>
+
             <div class="flex flex-col-reverse">
               <p class="text-xs">from last month</p>
 
