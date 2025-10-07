@@ -1,0 +1,21 @@
+{
+  "name": "expenses-chart-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx @tailwindcss/cli@latest -i ./src/styles/input.css -o ./src/styles/tailwind.css --watch",
+    "build": "npx @tailwindcss/cli@latest -i ./src/styles/input.css -o ./src/styles/tailwind.css --minify",
+    "dev": "npm run watch",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14"
+  }
+}

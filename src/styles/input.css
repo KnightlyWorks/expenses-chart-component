@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@custom-variant hocus (&:active, &:hover);
+
+@theme {
+  --color-red-500: hsl(10, 79%, 65%);
+  --color-blue-300: hsl(186, 34%, 65%);
+
+  /*neutral*/
+  --color-brown-950: hsl(25, 47%, 15%);
+  --color-brown-400: hsl(28, 10%, 53%);
+  --color-red-100: hsl(26, 66%, 93%);
+}
+
+@layer base {
+  body {
+    font-family: "DM Sans", sans-serif;
+    @apply text-brown-400 text-[18px] font-normal antialiased;
+  }
+}
+
+@layer components {
+  .histogram-element {
+    @apply relative h-2 w-full max-w-2xl rounded-sm bg-red-500 opacity-65 transition-all duration-500;
+  }
+
+  .histogram-element p {
+    @apply text-brown-400 text-xs;
+  }
+
+  .histogram-element-curret-day {
+    @apply bg-blue-300;
+  }
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="src/styles/tailwind.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <script src="src/js/modules/histogram.js" defer type="module"></script>
+  </head>
+  <body class="bg-red-100">
+    <div class="mx-auto flex max-w-lg flex-col gap-4 p-4">
+      <header class="flex w-full flex-row items-center justify-between rounded-2xl bg-red-400 p-6">
+        <article>
+          <h1 class="text-sm font-normal text-white">My balance</h1>
+          <p class="text-2xl font-bold text-white">$921.48</p>
+        </article>
+        <img src="assets/images/logo.svg" alt="" />
+      </header>
+      <main class="flex flex-col gap-8 rounded-2xl bg-white p-3 pb-6">
+        <section class="flex flex-col">
+          <figure class="flex min-h-50 grow flex-col items-start justify-between gap-3 p-4">
+            <figcaption class="text-brown-950 text-xl font-bold">Spending - Last 7 days</figcaption>
+            <div class="flex h-28 w-full flex-row items-end gap-6">
+              <div
+                class="histogram-element hocus:opacity-50! relative"
+                id="mon"
+                aria-label="Monday"
+              >
+                <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">mon</p>
+              </div>
+
+              <div
+                class="histogram-element hocus:opacity-50! relative"
+                id="tue"
+                aria-label="Tuesday"
+              >
+                <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">tue</p>
+              </div>
+
+              <div
+                class="histogram-element hocus:opacity-50! histogram-element-curret-day relative"
+                id="wed"
+                aria-label="Wednesday "
+              >
+                <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">wed</p>
+              </div>
+
+              <div
+                class="histogram-element hocus:opacity-50! relative"
+                id="thu"
+                aria-label="Thursday"
+              >
+                <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">thu</p>
+              </div>
+
+              <div
+                class="histogram-element hocus:opacity-50! relative"
+                id="fri"
+                aria-label="Friday"
+              >
+                <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">fri</p>
+              </div>
+
+              <div
+                class="histogram-element hocus:opacity-50! relative"
+                id="sat"
+                aria-label="Saturday"
+              >
+                <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">sat</p>
+              </div>
+
+              <div
+                class="histogram-element hocus:opacity-50! relative"
+                id="sun"
+                aria-label="Sunday"
+              >
+                <p class="absolute -bottom-7 left-1/2 -translate-x-1/2">sun</p>
+              </div>
+            </div>
+          </figure>
+        </section>
+
+        <section class="flex flex-col items-start gap-4">
+          <h2 class="text-sm">Total this month</h2>
+          <div class="flex w-full flex-row justify-between">
+            <strong class="text-brown-950 text-3xl">$478.33</strong>
+            <div class="flex flex-col-reverse">
+              <p class="text-xs">from last month</p>
+
+              <strong class="text-brown-950">+2.4%</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="attribution hidden">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Knighty</a>.
+    </div>
+  </body>
+</html>
